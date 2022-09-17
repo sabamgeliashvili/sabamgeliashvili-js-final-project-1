@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+  />
+    <link rel="stylesheet" href="css/style.css"> 
+    <link rel="stylesheet" href="css/responsive.css">
+    <title>SpaceX Cargo Planner</title>
+</head>
+<body>
+<div>
+    <img class="logo" src="images/logo.PNG">
+</div>
+<div id="loader">
+
+</div>
+<div class="container">
+    <form action="">
+     <input class="search" type="text" placeholder="search..." name="">
+     <button type="submit"><i class="fa-sharp fa-solid fa-magnifying-glass"></i></button>
+    </form>
+   </div>
+<div class="wholebox">
+<div id="divlist"> 
+    <nav class="navbar">
+        <ul class="nav-menu">
+            <li class="nav-item">Shipment List</li>
+            <li class="nav-item" onclick="check('Amazon.com')" >Amazon</li>
+            <li class="nav-item" onclick="check('American Express')">American Express</li>
+            <li class="nav-item" onclick="check('Walmart')">Walmart</li>
+            <li class="nav-item" onclick="check('Apple')" >Apple</li>
+        </ul>
+        <div class="burger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </nav>
+</div>
+
+<div id="result">
+    <h1 id="first-t">company</h1>
+    <h2 id="second-t">email</h2>
+    <h3>cargo boxes</h3>
+    <input id="inp" class="input"></input>
+    <h3>Number of required cargo bays</h3>
+    <h1 id="quantity">quantity</h1>
+</div>
+</div>
+<script src="./script.js"></script>
+</body>
+</html>            
+
+
